@@ -82,6 +82,16 @@ app.post("/api/carts", async(req, res)=> {
   }
 });
 
+app.delete("/api/carts/:cid", async(req, res)=> {
+  try {
+    const cid = req.params.cid;
+    const carts = await cartManager.deleteCartById(cid);
+    res.status(200).json({ message: "Carrito Eliminado", carts });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 //este metodo trae los productos de un carrito elegido por su id
 app.get("/api/carts/:cid", async(req, res)=> {
   try {
