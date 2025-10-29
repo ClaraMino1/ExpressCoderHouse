@@ -1,11 +1,26 @@
 import express from "express";
 import ProductManager from "./ProductManager.js";
 import CartManager from "./CartManager.js";
+import { engine } from "express-handlebars";
 
 const app = express();
 app.use( express.json() );
 const productManager = new ProductManager("./src/products.json");
 const cartManager = new CartManager("./src/carts.json");
+
+//handlebars config
+app.engine("handlebars", engine());
+app.set("view engine", "handlebars");
+app.set("views", "./src/views");
+
+//endpoints de handlebars. que vista mostrar
+app.get("/", (req, res)=> {
+  res.render("home");
+})
+
+app.get("/dashboard", (req, res)=> {
+  res.render("dashboard");
+})
 
 
 app.get("/", (req, res)=> {
