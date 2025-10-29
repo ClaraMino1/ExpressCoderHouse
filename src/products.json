@@ -1,20 +1,40 @@
 [
   {
     "id": "aedf89ee-460a-4bb5-9431-8ea48010c2fb",
-    "title": "Auriculares",
+    "title": "Teclado Logitech",
     "price": 1509,
-    "stock": 5
+    "stock": 5,
+    "thumbnail": "/img/teclado.png"
   },
   {
     "id": "aaf2eeaa-ce77-4d70-8e3d-6f3f7623e05f",
-    "title": "Mouse",
+    "title": "Mouse Redragon",
     "price": 1750,
-    "stock": 12
+    "stock": 12,
+    "thumbnail": "/img/mouse.png"
   },
   {
-    "id": "2f96c03c-9747-4379-8a3c-90d95f5d0852",
-    "title": "Webcam",
-    "price": 1600,
-    "stock": 12
+    "id": "d2384586-a851-449e-a49c-42717c1f5d73",
+    "title": "Auriculares Redragon",
+    "price": "1500",
+    "thumbnail": ""
+  },
+  {
+    "id": "43d655ca-b607-400a-840a-45b897abd496",
+    "title": "Parlantes",
+    "price": "1200",
+    "thumbnail": ""
+  },
+  {
+    "id": "f57ebc08-cefb-4682-a749-9063fc9ab39e",
+    "title": "Auriculares Blancos",
+    "price": "2600",
+    "thumbnail": "/img/1760805011622-virtuoso_pro.avif"
+  },
+  {
+    "id": "e58dd14c-42bb-419c-ab54-304c7600ad8e",
+    "title": "otro producto",
+    "price": "123",
+    "thumbnail": "/img/1761765135966-plantilla (1).png"
   }
 ]
